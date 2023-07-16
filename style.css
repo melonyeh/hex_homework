@@ -1,0 +1,412 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 以下為文件內容 */
+
+/* * {
+	outline: solid 1px slateblue;
+} */
+
+.wrap {
+	margin: 0 auto;
+	width: 1920px;
+}
+
+/* 社群資訊列 */
+
+.sms {
+	background-color: #F6F6F8;
+}
+
+.sms ul {
+	margin: 0 auto;
+	width: 1110px;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	padding: 8px 0;
+}
+
+.vl {
+	margin-right: 12px;
+	border-left: 1px solid #cccccc;
+	height: 12px;
+}
+
+.sms li {
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+}
+
+
+.fb a {
+	margin-right: 12px;
+	text-decoration: none;
+	font-weight: 400;
+	color: #4267B2;
+}
+
+.twitter a {
+	text-decoration: none;
+	font-weight: 400;
+	color: #1DA1F2;
+}
+
+.sms img {
+	padding-right: 5px;
+}
+
+/* 選單列 */
+
+.menu {
+	margin: 0 auto;
+	width: 1110px;
+	height: 76px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu ul {
+	display: flex;
+	align-items: center;
+}
+
+.menu li {
+	padding-left: 40px;
+}
+
+.menu ul a {
+	display: block;
+	height: 72px;
+	line-height: 76px;
+	text-decoration: none;
+	color: #00251A;
+}
+
+.menu ul a:hover {
+	color: hwb(162 0% 50%);
+	border-bottom: solid 4px #00CC99;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* KV主視覺 */
+
+.kv {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1920px;
+	height: 390px;
+    background-image: url(images/header_background.png);
+    background-repeat: no-repeat;
+}
+
+.kv h1 {
+	width: 100%;
+	padding: 24px 0;
+	padding-left: 498px;
+	line-height: 140%;
+	font-size: 36px;
+	font-weight: 500;
+	color: #1E1E1E;
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* 課程卡牌 */
+
+.course {
+	width: 1110px;
+	margin: 0 auto;
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.course_cards {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 310px;
+	height: 313px;
+	padding: 20px;
+	border-radius: 5px;
+	background: #FFF;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+}
+
+h3 {
+	text-align: center;
+	font-weight: 500;
+	font-size: 20px;
+	margin-bottom: 12px;
+}
+
+.course_cards p {
+	width: 310px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 150%;
+}
+
+.htmlicon {
+	margin: 0 auto;
+	width: 130px;
+}
+
+.rwdicon {
+	margin: 0 auto;
+	width: 174px;
+}
+
+.jqueryicon {
+	margin: 0 auto;
+	width: 294px;
+	margin-bottom: 43px;
+}
+
+.jq_feature {
+	padding-left: 20px;
+	list-style: disc;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 150%;
+}
+
+
+/* 課程比較 */
+
+.box h2 {
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 24px;
+	font-weight: 500;
+	font-size: 24px;
+}
+
+.course_difference {
+	width: 920px;
+}
+
+.course_difference th {
+	text-align: left;
+	font-weight: 700;
+	line-height: 150%;
+	background-color: #f2f2f2;
+}
+
+.course_difference td {
+	line-height: 150%;
+}
+
+
+.course_difference th, td {
+	padding: 6px 12px;
+	border-top: solid 1px #CCCCCC;
+	border-bottom: solid 1px #CCCCCC;
+}
+
+.course_difference span {
+	font-weight: 700;
+	color: #00CC99;
+}
+
+/* 客戶資訊 */
+
+.info {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: linear-gradient(180deg, #E4FFF8 0%, #A2DDCE 100%);
+}
+
+.info h2 {
+	padding-top: 36px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 120%;
+	color: #00251A;
+}
+
+form {
+	width: 730px;
+	margin-top: 28px;
+}
+
+.table_col {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+label {
+	margin-bottom: 8px;
+	font-weight: 400;
+	color: #00251A;
+}
+
+.field {
+	padding: 6px 10px;
+	margin-bottom: 16px;
+	box-sizing: border-box;
+	border-radius: 3px;
+	border: 1px solid #AAAAAA;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 150%;
+	color: #999999;
+}
+
+/* 修改 input 在 focous 狀態下的樣式 */
+
+input[type=text],
+input[type=tel],
+input[type=email] {
+	padding: 7px 10px;
+	margin-bottom: 16px;
+	border-radius: 3px;
+	border: 1px solid #AAAAAA;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 150%;
+	color: #999999;
+	box-sizing: border-box;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+}
+
+input[type=text]:focus,
+input[type=tel]:focus,
+input[type=email]:focus {
+	border: 1px solid #00CC99;
+}
+
+.col_left {
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+}
+
+.areainput {
+	height: 100%;
+	box-sizing: border-box;
+	margin-bottom: 16px;
+	border-radius: 3px;
+	border: 1px solid #AAAAAA;
+}
+
+/* 修改 textarea 在 focous 狀態下的樣式 */
+
+.areainput {
+	height: 100%;
+	margin-bottom: 16px;
+	border-radius: 3px;
+	border: 1px solid #AAAAAA;
+}
+
+.areainput:focus {
+	outline: none !important;
+	border: 1px solid #00CC99;
+}
+
+.col_right {
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+}
+
+.btn {
+	width: 160px;
+	padding: 10px 0;
+	margin: 16px 285px 36px 285px;
+	border-radius: 3px;
+	border: 1px solid #00251A;
+	color: #FFFFFF;
+	background: #00251A;
+}
+
+.btn:hover {
+	border: 1px solid #00CC99;
+	color: #00251A;
+	background: #00CC99;
+}
+
+/* 頁腳 */
+
+.footer {
+	margin: 0 auto;
+	width: 1110px;
+	padding: 22px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contact li {
+	line-height: 150%;
+	font-weight: 400;
+}
+
+.contact a {
+	text-decoration: none;
+	color: #00CC99;
+}
+
+.contact a:hover {
+	color: #00251A;
+}
