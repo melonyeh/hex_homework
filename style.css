@@ -403,7 +403,9 @@ input[type=email]:focus {
 }
 
 .contact a {
+	margin-left: 8px;
 	text-decoration: none;
+	line-height: 150%;
 	color: #00CC99;
 }
 
