@@ -49,13 +49,14 @@ table {
 
 /* 以下為文件內容 */
 
-/* * {
-	outline: solid 1px slateblue;
-} */
 
-.wrap {
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+body{
+  font-family: 'Helvetica', 'Arial', 'Noto Sans TC', '黑體-繁','微軟正黑體', sans-serif !important;
+}
+
+header {
 	margin: 0 auto;
-	width: 1920px;
 }
 
 /* 社群資訊列 */
@@ -73,18 +74,16 @@ table {
 	padding: 8px 0;
 }
 
-.vl {
-	margin-right: 12px;
-	border-left: 1px solid #cccccc;
-	height: 12px;
-}
-
 .sms li {
 	display: flex;
 	align-items: center;
 	font-weight: 400;
 }
 
+.fb {
+	margin-right: 12px;
+	border-right: 1px solid #cccccc;
+}
 
 .fb a {
 	margin-right: 12px;
@@ -108,7 +107,6 @@ table {
 .menu {
 	margin: 0 auto;
 	width: 1110px;
-	height: 76px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -116,7 +114,6 @@ table {
 
 .menu ul {
 	display: flex;
-	align-items: center;
 }
 
 .menu li {
@@ -125,19 +122,18 @@ table {
 
 .menu ul a {
 	display: block;
-	height: 72px;
-	line-height: 76px;
+	padding: 30px 0;
 	text-decoration: none;
 	color: #00251A;
 }
 
 .menu ul a:hover {
+	padding-bottom: 26px;
 	color: hwb(162 0% 50%);
 	border-bottom: solid 4px #00CC99;
 }
 
 .content {
-	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
@@ -148,22 +144,27 @@ table {
     display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 1920px;
 	height: 390px;
+	background-size: cover; /* 可讓圖片滿版 */
     background-image: url(images/header_background.png);
     background-repeat: no-repeat;
 }
 
-.kv h1 {
+.h1_text {
 	width: 100%;
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+.wrap {
+	margin: 0 auto;
+	width: 1110px;
 	padding: 24px 0;
-	padding-left: 498px;
 	line-height: 140%;
 	font-size: 36px;
 	font-weight: 500;
 	color: #1E1E1E;
-	background-color: rgba(255, 255, 255, 0.15);
 }
+
 
 /* 課程卡牌 */
 
@@ -180,8 +181,7 @@ table {
 	flex-direction: column;
 	justify-content: flex-end;
 	width: 310px;
-	height: 313px;
-	padding: 20px;
+	padding: 25px 20px;
 	border-radius: 5px;
 	background: #FFF;
 	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
@@ -237,6 +237,7 @@ h3 {
 }
 
 .course_difference {
+	margin: 0 auto;
 	width: 920px;
 }
 
@@ -289,7 +290,6 @@ form {
 
 .table_col {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 }
 
@@ -299,16 +299,8 @@ label {
 	color: #00251A;
 }
 
-.field {
-	padding: 6px 10px;
-	margin-bottom: 16px;
-	box-sizing: border-box;
-	border-radius: 3px;
-	border: 1px solid #AAAAAA;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 150%;
-	color: #999999;
+textarea {
+	resize: none; /* 避免可以調整尺寸 */
 }
 
 /* 修改 input 在 focous 狀態下的樣式 */
@@ -340,20 +332,14 @@ input[type=email]:focus {
 	width: 350px;
 	display: flex;
 	flex-direction: column;
-}
-
-.areainput {
-	height: 100%;
-	box-sizing: border-box;
-	margin-bottom: 16px;
-	border-radius: 3px;
-	border: 1px solid #AAAAAA;
+	justify-content:space-between;
 }
 
 /* 修改 textarea 在 focous 狀態下的樣式 */
 
 .areainput {
 	height: 100%;
+	box-sizing: border-box;
 	margin-bottom: 16px;
 	border-radius: 3px;
 	border: 1px solid #AAAAAA;
@@ -378,6 +364,7 @@ input[type=email]:focus {
 	border: 1px solid #00251A;
 	color: #FFFFFF;
 	background: #00251A;
+	cursor: pointer; /* 改變 hover 狀態下的游標樣式 */
 }
 
 .btn:hover {
@@ -388,7 +375,7 @@ input[type=email]:focus {
 
 /* 頁腳 */
 
-.footer {
+footer {
 	margin: 0 auto;
 	width: 1110px;
 	padding: 22px 0;
